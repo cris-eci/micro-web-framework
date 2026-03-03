@@ -271,7 +271,7 @@ Run the tests with:
 Tests run: 23, Failures: 0, Errors: 0, Skipped: 0
 BUILD SUCCESS
 ```
-
+![unit tests ran](imgs/run-tests.png)
 ### Unit Tests
 
 | Test | Description |
