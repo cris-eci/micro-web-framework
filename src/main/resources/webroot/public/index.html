@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Web Framework</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Micro Web Framework</h1>
+        <p>A lightweight HTTP server built from scratch in Java</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Try the REST Endpoints</h2>
+            <ul>
+                <li><a href="/App/hello?name=World">GET /App/hello?name=World</a> – Greeting service</li>
+                <li><a href="/App/pi">GET /App/pi</a> – Returns the value of π</li>
+                <li><a href="/App/echo?msg=HelloFramework">GET /App/echo?msg=HelloFramework</a> – Echo service</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Interactive Hello</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name" />
+            <button onclick="sayHello()">Say Hello</button>
+            <p id="result"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>AREP – Distributed Systems Lab</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

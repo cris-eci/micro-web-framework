@@ -1,13 +1,14 @@
 package com.arep.lab;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.arep.lab.appexamples.MainServices;
 
-@SpringBootApplication
+/**
+ * Main entry point for the micro-web-framework application.
+ * Delegates to {@link MainServices} which registers all routes and starts the server.
+ */
 public class LabApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(LabApplication.class, args);
-	}
-
+    public static void main(String[] args) throws Exception {
+        MainServices.main(args);
+    }
 }

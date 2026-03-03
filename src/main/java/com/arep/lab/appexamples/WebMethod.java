@@ -1,8 +1,11 @@
 package com.arep.lab.appexamples;
 
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-
+/**
+ * Functional interface representing a REST endpoint handler.
+ * Implementations receive the parsed request and a response object,
+ * and return the body string to send back to the client.
+ */
+@FunctionalInterface
 public interface WebMethod {
-    String execute(HttpRequest req, HttpResponse res);
+    String handle(HttpRequest req, HttpResponse res);
 }
