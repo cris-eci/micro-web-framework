@@ -184,7 +184,7 @@ HttpServer.start(9090);       // custom port
 ### Clone & Build
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/cris-eci/micro-web-framework
 cd lab
 ./mvnw clean package -DskipTests
 ```
@@ -208,9 +208,16 @@ The server starts at **http://localhost:8080**.
 | URL | Expected Result |
 |---|---|
 | `http://localhost:8080/index.html` | Static HTML demo page |
+![demo-page](imgs/demo-page.png)
+
 | `http://localhost:8080/App/hello?name=Pedro` | `Hello Pedro` |
+
+![hello and name](imgs/hello-name.png)
 | `http://localhost:8080/App/pi` | `3.141592653589793` |
+![pi endpoint](imgs/pi.png)
+
 | `http://localhost:8080/App/echo?msg=test` | `Echo: test` |
+![local test](imgs/echo-test.png)
 
 ---
 
